@@ -1,0 +1,727 @@
+
+
+ @media (max-width: 576px){
+
+    div#divFotoPerfil, aside{
+        background-color:   rgb(109, 21, 11);
+        color: white;
+    }
+    div#divTextoPerfil{
+        background-color: #526879;
+        color: #012109;
+    }
+
+  }
+
+
+@media (max-width: 768px){
+
+    li#enlace{
+        display: none;
+    }
+    div#divObjetivo{
+        display: none;
+    }
+    div#divFotoPerfil, aside{
+        background-color:   rgb(7, 23, 60);
+    }
+    div#divTextoPerfil{
+        background-color: #207484;
+        color: rgb(17, 17, 17);
+    }
+
+  }
+
+ 
+ 
+  @media (max-width: 992px){
+    #divFotoPerfil, aside{
+        background-color:   rgb(109, 21, 11);
+        color: white;
+    }
+    #divTextoPerfil{
+        background-color: #526879;
+        color: #012109;
+    }
+  }
+
+ 
+
+
+
+
+
+
+
+*{
+    box-sizing:border-box;
+}
+
+
+
+
+
+
+
+
+html, body {
+    margin: 0px;
+    padding: 5px;
+    font-family: 'sofia', 'lora', Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+
+
+
+
+
+
+
+
+/* Damos forma y estilo a listas compuestas por datos de contacto y redes sociales */
+
+#listaRedes li{
+line-height: 1.7;
+font-size: 0.7em;
+}
+
+#listaRedes{
+float: right;
+padding-top: 2em;
+list-style: none;
+
+}
+
+li#facebook::before{
+    content: "\f09a";
+    margin-right: 1em;
+    color: #0c286a;
+}
+li#instagram::before{
+    content: "\f16d";
+    margin-right: 1em;
+    color: rgb(139, 48, 14);
+}
+li#twitter::before{
+    content: "\f099";
+    margin-right: 1em;
+    color: #012109;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Defino el estilo de la seccion 'Objetivos */
+
+
+#textoObjetivo{
+    text-align: left;
+    font-family: 'Roboto', 'Annie Use Your Telescope', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 2em;
+    color: rgb(207, 183, 31);
+    
+}
+
+#tituloObjetivo{
+    padding-top: 1.1em;
+    text-align: center;
+    color: #aeddf0;
+    font-size: 1em;
+}
+
+#divDocs{
+    background-color: #1d1c1b;
+    color: rgb(223, 161, 111);
+    align-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Aqui trabajamos con elementos aislados como saltos de lineas,
+botones e iconos decorativos */
+
+hr{
+    background-color: #0b42c2;
+    height: 5px;
+}
+
+#buttonBar{
+    background-color: #8f8c8a;
+    }
+    
+    #sobre{
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    #divFlecha1, #divFlecha2, #divFlecha3, #divInfoPersonal, #divFlecha5{
+        text-align: center;
+    }
+    
+    
+    h2#tituloExpLab, h2#tituloFormacion, h2#tituloHabilidades{
+        display: inline;
+    }
+    
+    a#flechaArriba5{
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 0.5em;
+    margin-left: 0;
+    }
+
+    #flechaArriba5{
+        float: right;
+    }
+    
+    a.fa{
+        content: "\f062";
+        padding-left: 1.5em;
+        margin-left: 1.5;
+        font-size: 1.2em;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Damos apariencia y estructura al titulo y subtitulo del curriculum */
+
+
+#nombreTitulo{
+    color: rgb(242, 238, 230);
+    margin-top: 0;
+    padding-top: 15px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#subTitulo{
+    color: rgb(253, 252, 252);
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Trabajmos el texto del perfil profesional y el background
+de la foto de perfil con los bordes incluidos */
+
+
+
+
+#divTextoPerfil{
+    border-radius: 5px 5px;
+    border: 1px solid black;
+    background-color: #f0d897;
+ 
+}
+
+#textoPerfil{
+    padding-top: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'sofia', 'lora';
+    color: rgb(90, 5, 5);
+}
+
+#foto{
+    margin-top: 10px;
+    padding-top: 10px; 
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#fotoPerfil{
+    max-height: 100%;
+    height: 100;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 10px;
+}
+
+#divFotoPerfil{
+    border: 1px solid black;
+    border-radius: 5px 5px;
+}
+
+#divFotoPerfil, aside{
+    background-color:   rgb(5, 5, 5);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Damos estilo a la barra de navegacion */
+
+
+#Barra{
+    border-radius: 5px 5px;
+    border: 1px solid black;
+    background-color: #9a785f;
+    padding-right: 0;
+    margin-right: 0;
+ }
+
+ #Barra li a{
+    padding-left: 1em;
+    color: rgb(253, 252, 252);
+    font-size: 1em;
+    font-family: 'Roboto', 'Annie Use Your Telescope', Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+.navbar-nav li:hover{
+    background-color: rgb(61, 59, 51);
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Diseñamos la lista desordenada principal que incluye email, telefono,
+y ubicacion de la persona. hacemos uso de Font Awesome para decorar
+con iconos  */
+
+
+
+#divListaFa #divListaRedes{
+float: left;
+}
+
+ #listaFa li{
+   font-size: 0.7em;
+ }
+
+#listaFa{
+    float: left;
+    padding-top: 2em;
+}
+
+li#mail::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f0e0";
+	margin-right:8px;
+}
+
+li#cel::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f095";
+	margin-right:8px;
+ }
+
+li#ubi::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f124";
+	margin-right:8px;
+}
+ #mail{
+    color:rgb(14, 177, 30);
+ }
+ 
+ #cel{
+     color: #0e536d;
+ }
+
+ #ubi{
+     color:rgb(2, 33, 34);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilizamos una tabla compuesta por los idiomas aprendidos.
+Hacemos uso de Font Awesome para la decoracion. */
+
+
+
+#divFlecha5{
+    padding-top: 2.5em;
+}
+
+#tituloIdiomas{
+    color: rgb(228, 107, 107);
+    font-size: 1.2em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#divTabla{
+    padding-top: 2em;
+}
+#tablaIdiomas{ 
+    padding-top: 2em;
+    font-size: 1.1em;
+    line-height: 2.1;
+    color:  #eede76;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+td#celdaIdioma1::after{
+	font-family:"Font Awesome 5 Free";
+	content: "\f005  ""\f005  ""\f005  ""\f005  ""\f005  ""\f005  ""\f005  ";
+    
+}
+td#celdaIdioma2::after{
+	font-family:"Font Awesome 5 Free";
+	content:"\f005  ""\f005  ""\f005  ""\f005  ""\f005  ""\f005  ";
+	
+}
+td#celdaIdioma3::after{
+	font-family:"Font Awesome 5 Free";
+	content:"\f005  ""\f005  ""\f005  ""\f005  ";
+	
+}
+td#celdaIdioma4::after{
+	font-family:"Font Awesome 5 Free";
+	content:"\f005  ""\f005  ""\f005  ""\f005  ";
+	
+}
+
+.claseCelda{
+    color: #a4c20b;
+    padding-left: 1.5em;
+}
+
+.divisorTabla{
+    background-color: rgb(141, 137, 137);
+
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Damos apariencia al contenido de la seccion principal que icluye
+ la experiencia laboral, formacion y habilidades */
+
+
+ul#listaExpLab1 li, ul#listaExpLab2 li, ul#listaFormacion li, ul#listaHabilidades li{
+padding-top: 5px;
+padding-left: 10px;
+padding-bottom: 5px;
+margin-top: 5px;
+margin-left: 20px;
+}
+
+#tituloHabilidades{
+    padding-right: 0.5em;
+}
+
+#divFlecha1{
+    margin-top: 10px;
+    padding-top: 10px;
+}
+#tituloExpLab, #tituloFormacion, #tituloHabilidades{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #0c286a;
+}
+
+div#divSection p{
+    padding-top: 5px;
+    padding-left: 2em;
+    padding-bottom: 5px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: rgb(7, 140, 163);
+    font-weight: bold;
+}
+
+aside{
+    border: 1px solid black;
+    border-radius: 4px 4px;
+}
+
+
+#divSection li{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(9, 9, 8);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+#divSection{
+    border-radius: 5px 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+    margin-left: 0;
+}
+
+
+#asideYsection{
+padding-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Trabajamos en el diseño de la lista de datos persoales.
+hacemos uso de Font Awesome para decorar con iconos */
+
+
+#arriba{
+float: right;
+}
+#arriba2{
+    float: right;
+}
+
+#infoPersonal{
+    color: rgb(228, 107, 107);
+    font-size:1.2em;
+    text-align: center;
+    padding-top: 1em;  
+} 
+
+#listaDatos li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    color:  #eede76;
+}
+
+#listaDatos{
+    list-style:none;
+    line-height: 3.1;
+}
+
+li#lista1::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f007";
+	margin-right:1em;
+}
+li#lista2::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f254";
+	margin-right:1em;
+}
+li#lista3::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f015";
+	margin-right:1em;
+}
+li#lista4::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f11d";
+	margin-right:1em;
+}
+li#lista5::before{
+	font-family:"Font Awesome 5 Free";
+	content:"\f098";
+	margin-right:1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilizamos el parrafo correspondiente a los titulos alcanzados */
+
+
+#tituloParrafo2{
+    padding-top: 2em;
+    text-align: center;
+font-size: 1.3em;
+font-weight: 700;
+color: rgb(228, 107, 107);
+}
+
+#divParrafo2{
+    line-height: 1;
+    color: #728b9f;
+    padding: 5px;
+}
+
+.tituloPremio, .tituloPremio{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color:rgb(207, 153, 27);
+}
+
+.premio, .premio{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #d8d064;
+}
+
+#divDocs{
+    display: none;
+}
+
+
+
+
