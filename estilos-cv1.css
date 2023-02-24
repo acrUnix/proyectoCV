@@ -23,13 +23,15 @@
         display: none;
     }
     div#divFotoPerfil, aside{
-        background-color:   rgb(7, 23, 60);
+        background-color:   rgb(9, 9, 9);
     }
     div#divTextoPerfil{
-        background-color: #207484;
-        color: rgb(17, 17, 17);
-    }
+        background-color: #0f0f0f;
 
+    }
+    p#textoPerfil{
+        color: #aeb4ba;
+    }
   }
 
  
