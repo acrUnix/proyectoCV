@@ -297,7 +297,7 @@ hr.hrDatos{
 
 
 #nombreTitulo{
-    color: rgb(242, 238, 230);
+    color: rgb(219, 216, 210);
     margin-top: 0;
     padding-top: 15px;
     text-align: center;
@@ -306,7 +306,7 @@ hr.hrDatos{
 }
 
 #subTitulo{
-    color: rgb(253, 252, 252);
+    color: rgb(181, 174, 174);
     text-align: center;
     font-size: 1.2em;
 }
