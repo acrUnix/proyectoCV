@@ -4,6 +4,16 @@
     body{
         background-color: #fce1f5;
     }
+    ul#listaDatos{
+        line-height: 2.8;
+    }
+
+    div#faYredes{
+        border-radius: 4px 4px;
+        margin-top: 3px;
+        border: 2px solid black;
+        background-color: rgb(193, 185, 126);
+    }
 
     .navbar-nav li:hover{
         background-color: rgb(237, 186, 169);
@@ -13,7 +23,7 @@
         background-color: rgb(247, 240, 240);
         margin-top: 3px;
     }
-    #Barra li a{
+    nav#Barra li a{
         color: #3e5769;
     }
     #buttonBar{
@@ -60,7 +70,7 @@
         padding-bottom: 5px;
         margin-top: 5px;
         padding-right: 5px;
-        margin-left: 0.5em;
+        margin-left: 0;
         }
         
         p#tituloParrafo2{
@@ -111,6 +121,9 @@
         margin-top: 3px;
         border: 2px solid black;
         background-color: rgb(244, 230, 230);
+    }
+    ul#listaDatos{
+        line-height: 2.8;
     }
     ul.navbar-nav li:hover{
         background-color: rgb(48, 46, 45);
@@ -184,6 +197,14 @@
         font-weight: 500;
         color: #e7ba58;
     }
+    div#divSection ul li{
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        padding-right: 5px;
+        margin-left: 0;
+        }
   }
 
  
