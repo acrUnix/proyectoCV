@@ -1,49 +1,104 @@
 
+@media (max-width: 576px){
 
- @media (max-width: 576px){
-
-    div#divFotoPerfil, aside{
-        background-color:   rgb(109, 21, 11);
-        color: white;
+    div#divFotoPerfil, aside#aside1{
+        background-color:   rgb(9, 9, 9);
     }
     div#divTextoPerfil{
-        background-color: #526879;
-        color: #012109;
+        background-color: #0b0a0a;
     }
-
-  }
-
-
-@media (max-width: 768px){
-
+    div#textoYbarra{
+        padding: 0;
+    }
+    p#textoPerfil{
+        font-size: 0.8em;
+        padding: 1em;
+    }
     li#enlace{
         display: none;
     }
     div#divObjetivo{
         display: none;
     }
-    div#divFotoPerfil, aside{
+    section#section1{
+        padding: 0;
+    }
+    div#divSection{
+        padding-right: 5px;
+        padding: 0;
+        font-size: 0.8em;
+    }
+    div#divSection ul li{
+        padding-top: 5px;
+        padding-left: 0.5em;
+        padding-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 0.5em;
+        }
+        
+  }
+
+
+
+
+@media (max-width: 768px){
+
+    section#section1{
+        padding: 0;
+    }
+    div#divSection{
+        padding: 0;
+    }
+    div#textoYbarra{
+        padding: 0;
+    }
+    p#textoPerfil{
+        font-size: 0.8em;
+        padding: 1em;
+    }
+    li#enlace{
+        display: none;
+    }
+    div#divObjetivo{
+        display: none;
+    }
+    div#divFotoPerfil, aside#aside1{
         background-color:   rgb(9, 9, 9);
     }
     div#divTextoPerfil{
-        background-color: #0f0f0f;
+        background-color: #0b0a0a;
 
     }
     p#textoPerfil{
         color: #aeb4ba;
     }
+    h1#nombreTitulo{
+        color: #99abb7;
+    }
+    p#subTitulo{
+        color: #666b70;
+    }
   }
 
  
+
  
-  @media (max-width: 992px){
-    #divFotoPerfil, aside{
+  @media (min-width: 992px){
+
+    div#divFotoPerfil, aside#aside1{
         background-color:   rgb(109, 21, 11);
-        color: white;
     }
-    #divTextoPerfil{
-        background-color: #526879;
-        color: #012109;
+    p#textoPerfil{
+        color: #99abbc;
+    }
+    div#divTextoPerfil{
+        background-color: #771c10;
+    }
+    h1#nombreTitulo{
+        color: #aec5d4;
+    }
+    p#subTitulo{
+        color: #7c8084;
     }
   }
 
