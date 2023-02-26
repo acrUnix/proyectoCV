@@ -4,12 +4,14 @@
     div#divFotoPerfil, aside#aside1{
         background-color:   rgb(9, 9, 9);
     }
+   
     div#divTextoPerfil{
-        background-color: #0b0a0a;
+        background-color: #0b0a0a; 
     }
     div#textoYbarra{
-        padding: 0;
+        padding:0;
     }
+  
     p#textoPerfil{
         font-size: 0.8em;
         padding: 1em;
@@ -55,6 +57,7 @@
     p#textoPerfil{
         font-size: 0.8em;
         padding: 1em;
+        color: #aeb4ba;
     }
     li#enlace{
         display: none;
@@ -69,9 +72,7 @@
         background-color: #0b0a0a;
 
     }
-    p#textoPerfil{
-        color: #aeb4ba;
-    }
+  
     h1#nombreTitulo{
         color: #99abb7;
     }
@@ -89,7 +90,7 @@
         background-color:   rgb(109, 21, 11);
     }
     p#textoPerfil{
-        color: #99abbc;
+        color: #c0d3e5;
     }
     div#divTextoPerfil{
         background-color: #771c10;
@@ -236,6 +237,9 @@ hr{
     background-color: #0b42c2;
     height: 5px;
 }
+hr.hrDatos{
+    background-color: #f9f6f6;
+}
 
 #buttonBar{
     background-color: #8f8c8a;
@@ -334,6 +338,7 @@ de la foto de perfil con los bordes incluidos */
     border-radius: 5px 5px;
     border: 1px solid black;
     background-color: #f0d897;
+    padding: 0;
  
 }
 
@@ -521,7 +526,7 @@ Hacemos uso de Font Awesome para la decoracion. */
 }
 
 #tituloIdiomas{
-    color: rgb(228, 107, 107);
+    color: rgb(222, 219, 222);
     font-size: 1.2em;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -591,7 +596,7 @@ td#celdaIdioma4::after{
  la experiencia laboral, formacion y habilidades */
 
 
-ul#listaExpLab1 li, ul#listaExpLab2 li, ul#listaFormacion li, ul#listaHabilidades li{
+div#divSection ul li{
 padding-top: 5px;
 padding-left: 10px;
 padding-bottom: 5px;
@@ -631,7 +636,7 @@ aside{
 }
 
 
-#divSection li{
+div#divSection li{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(9, 9, 8);
     font-size: 1em;
@@ -686,7 +691,7 @@ float: right;
 }
 
 #infoPersonal{
-    color: rgb(228, 107, 107);
+    color: rgb(222, 219, 222);
     font-size:1.2em;
     text-align: center;
     padding-top: 1em;  
@@ -747,32 +752,31 @@ li#lista5::before{
 /* Estilizamos el parrafo correspondiente a los titulos alcanzados */
 
 
-#tituloParrafo2{
+p#tituloParrafo2{
     padding-top: 2em;
     text-align: center;
-font-size: 1.3em;
+font-size: 1.2em;
 font-weight: 700;
-color: rgb(228, 107, 107);
+color: rgb(222, 219, 222);
 }
 
-#divParrafo2{
+div#divParrafo2{
     line-height: 1;
-    color: #728b9f;
     padding: 5px;
 }
 
 .tituloPremio, .tituloPremio{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
-    color:rgb(207, 153, 27);
+    color:rgb(207, 160, 147);
 }
 
 .premio, .premio{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 500;
-    color: #d8d064;
+    color: #e7dd58;
 }
 
 #divDocs{
