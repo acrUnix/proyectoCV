@@ -9,7 +9,7 @@
     
      }
     nav#Barra{
-        background-color: black;
+        background-color: rgb(247, 240, 240);
     }
     #Barra li a{
         color: #666b70;
@@ -100,12 +100,12 @@
     div#faYredes{
         border: 2px solid black;
     }
-    .navbar-nav li:hover{
+    ul.navbar-nav li:hover{
         background-color: rgb(48, 46, 45);
     
      }
     nav#Barra{
-        background-color: black;
+        background-color: rgb(244, 230, 230);
     }
     #Barra li a{
         color: #666b70;
