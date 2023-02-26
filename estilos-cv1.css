@@ -9,7 +9,10 @@
         background-color: #0b0a0a; 
     }
     div#textoYbarra{
+        margin-top: 3px;
+        margin-bottom: 3px;
         padding:0;
+        background-color: #ffeffd;
     }
   
     p#textoPerfil{
@@ -111,6 +114,32 @@
     }
     p#subTitulo{
         color: #666b70;
+    }
+    p#tituloParrafo2{
+        padding-top: 2em;
+        text-align: center;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: rgb(222, 219, 222);
+    }
+    
+    div#divParrafo2{
+        line-height: 1;
+        padding: 5px;
+    }
+    
+    .tituloPremio, .tituloPremio{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.7em;
+        font-weight: 700;
+        color:rgb(202, 195, 193);
+    }
+    
+    .premio, .premio{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 0.7em;
+        font-weight: 500;
+        color: #e7ba58;
     }
   }
 
