@@ -1,18 +1,19 @@
 
 @media (max-width: 576px){
 
-    div#faYredes{
-        border: 2px solid black;
+    body{
+        background-color: #fce1f5;
     }
+
     .navbar-nav li:hover{
-        background-color: rgb(48, 46, 45);
+        background-color: rgb(173, 170, 169);
     
      }
     nav#Barra{
         background-color: rgb(247, 240, 240);
     }
     #Barra li a{
-        color: #666b70;
+        color: #28333b;
     }
 
     div#divFotoPerfil, aside#aside1{
@@ -108,12 +109,9 @@
         background-color: rgb(244, 230, 230);
     }
     #Barra li a{
-        color: #666b70;
+        color: #393e44;
     }
     
-    nav#Barra{
-        background-color: black;
-    }
     section#section1{
         padding: 0;
     }
@@ -508,13 +506,13 @@ de la foto de perfil con los bordes incluidos */
 
  #Barra li a{
     padding-left: 1em;
-    color: rgb(253, 252, 252);
+    color: rgb(34, 29, 29);
     font-size: 1em;
     font-family: 'Roboto', 'Annie Use Your Telescope', Verdana, Geneva, Tahoma, sans-serif;
  }
 
 .navbar-nav li:hover{
-    background-color: rgb(100, 13, 8);
+    background-color: rgb(197, 192, 192);
 
  }
 
