@@ -116,6 +116,7 @@
      }
     nav#Barra{
         background-color: rgb(244, 230, 230);
+        margin-top: 3px;
     }
     #Barra li a{
         color: #393e44;
@@ -168,14 +169,14 @@
         padding: 5px;
     }
     
-    .tituloPremio, .tituloPremio{
+    p.tituloPremio, p.tituloPremio{
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.7em;
         font-weight: 700;
         color:rgb(202, 195, 193);
     }
     
-    .premio, .premio{
+    p.premio, p.premio{
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 0.7em;
         font-weight: 500;
