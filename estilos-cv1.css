@@ -6,15 +6,19 @@
     }
 
     .navbar-nav li:hover{
-        background-color: rgb(173, 170, 169);
+        background-color: rgb(237, 186, 169);
     
      }
     nav#Barra{
         background-color: rgb(247, 240, 240);
+        margin-top: 3px;
     }
     #Barra li a{
-        color: #28333b;
+        color: #3e5769;
     }
+    #buttonBar{
+        background-color: #7c8084;
+      }
 
     div#divFotoPerfil, aside#aside1{
         background-color:   rgb(9, 9, 9);
@@ -45,6 +49,7 @@
         margin-top: 3px;
     }
     div#divSection{
+        background-color: #ecc7c3;
         padding-right: 5px;
         padding: 0;
         font-size: 0.8em;
@@ -71,14 +76,14 @@
             padding: 5px;
         }
         
-        .tituloPremio, .tituloPremio{
+        p.tituloPremio, p.tituloPremio{
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 0.7em;
             font-weight: 700;
             color:rgb(202, 195, 193);
         }
         
-        .premio, .premio{
+        p.premio, p.premio{
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 0.7em;
             font-weight: 500;
@@ -96,6 +101,10 @@
 
 
 @media (max-width: 768px){
+
+     body{
+        background-color: #fce1f5;
+    }
 
 
     div#faYredes{
