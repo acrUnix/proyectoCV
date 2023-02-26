@@ -108,7 +108,9 @@
 
 
     div#faYredes{
+        margin-top: 3px;
         border: 2px solid black;
+        background-color: rgb(244, 230, 230);
     }
     ul.navbar-nav li:hover{
         background-color: rgb(48, 46, 45);
