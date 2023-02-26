@@ -1,6 +1,10 @@
 
 @media (max-width: 576px){
 
+    nav#barra{
+        background-color: black;
+    }
+
     div#divFotoPerfil, aside#aside1{
         background-color:   rgb(9, 9, 9);
     }
@@ -81,6 +85,10 @@
 
 @media (max-width: 768px){
 
+    
+    nav#barra{
+        background-color: black;
+    }
     section#section1{
         padding: 0;
     }
