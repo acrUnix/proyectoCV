@@ -1,8 +1,15 @@
 
 @media (max-width: 576px){
 
-    nav#barra{
+    .navbar-nav li:hover{
+        background-color: rgb(48, 46, 45);
+    
+     }
+    nav#Barra{
         background-color: black;
+    }
+    #Barra li a{
+        color: #666b70;
     }
 
     div#divFotoPerfil, aside#aside1{
@@ -86,7 +93,7 @@
 @media (max-width: 768px){
 
     
-    nav#barra{
+    nav#Barra{
         background-color: black;
     }
     section#section1{
@@ -489,7 +496,7 @@ de la foto de perfil con los bordes incluidos */
  }
 
 .navbar-nav li:hover{
-    background-color: rgb(61, 59, 51);
+    background-color: rgb(100, 13, 8);
 
  }
 
