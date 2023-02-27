@@ -240,7 +240,7 @@
     p#subTitulo{
         color: #7c8084;
     }
-    #textoObjetivo{
+    p#textoObjetivo{
         text-align: left;
         font-family: 'Roboto', 'Annie Use Your Telescope', sans-serif, Arial, Helvetica, sans-serif;
         font-size: 1em;
@@ -252,14 +252,14 @@
         
     }
     
-    #tituloObjetivo{
+    p#tituloObjetivo{
         padding-top: 1.2em;
         text-align: center;
         color: #711d03;
         font-size: 1.2em;
     }
     
-    #divDocs{
+    div#divDocs{
         border-radius: 5px 5px;
         border-bottom: 1px solid rgb(29, 25, 23);;
         border-left: 1px solid rgb(14, 14, 14);;
@@ -360,7 +360,7 @@ li#twitter::before{
 /* Defino el estilo de la seccion 'Objetivos */
 
 
-#textoObjetivo{
+p#textoObjetivo{
     text-align: left;
     font-family: 'Roboto', 'Annie Use Your Telescope', sans-serif, Arial, Helvetica, sans-serif;
     font-size: 1em;
@@ -372,14 +372,14 @@ li#twitter::before{
     
 }
 
-#tituloObjetivo{
+p#tituloObjetivo{
     padding-top: 1.2em;
     text-align: center;
     color: #711d03;
     font-size: 1.2em;
 }
 
-#divDocs{
+div#divDocs{
     border-radius: 5px 5px;
     border-bottom: 1px solid rgb(29, 25, 23);;
     border-left: 1px solid rgb(14, 14, 14);;
