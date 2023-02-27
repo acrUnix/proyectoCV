@@ -216,7 +216,12 @@
   }
 
  
-
+  @media (max-width: 992px){
+    div#divObjetivo{
+        padding: 0;
+        display: none;
+    }
+  }
  
 
 
