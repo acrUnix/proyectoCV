@@ -240,6 +240,37 @@
     p#subTitulo{
         color: #7c8084;
     }
+    #textoObjetivo{
+        text-align: left;
+        font-family: 'Roboto', 'Annie Use Your Telescope', sans-serif, Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 2em;
+        color: rgb(78, 60, 54);
+        
+    }
+    
+    #tituloObjetivo{
+        padding-top: 1.2em;
+        text-align: center;
+        color: #711d03;
+        font-size: 1.2em;
+    }
+    
+    #divDocs{
+        border-radius: 5px 5px;
+        border-bottom: 1px solid rgb(29, 25, 23);;
+        border-left: 1px solid rgb(14, 14, 14);;
+        border-right: 1px solid rgb(20, 19, 19);;
+        background-color: #e6e0c4;
+        align-content: center;
+    }
+    
+    div#divObjetivo{
+        padding: 0;
+    }
   }
 
  
