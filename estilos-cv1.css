@@ -333,25 +333,28 @@ li#twitter::before{
     text-align: left;
     font-family: 'Roboto', 'Annie Use Your Telescope', sans-serif, Arial, Helvetica, sans-serif;
     font-size: 1em;
-    font-weight: 500;
-     padding-top: 10px;
+    font-weight: 700;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 2em;
-    color: rgb(207, 183, 31);
+    color: rgb(78, 60, 54);
+    
 }
 
-div#tituloObjetivo{
-    padding-top: 1.1em;
+#tituloObjetivo{
+    padding-top: 1.2em;
     text-align: center;
-    color: #aeddf0;
-    font-size: 1em;
+    color: #711d03;
+    font-size: 1.2em;
 }
 
-div#divDocs{
-    background-color: #1d1c1b;
-    color: rgb(223, 161, 111);
+#divDocs{
+    border-radius: 5px 5px;
+    border-bottom: 1px solid rgb(29, 25, 23);;
+    border-left: 1px solid rgb(14, 14, 14);;
+    border-right: 1px solid rgb(20, 19, 19);;
+    background-color: #e6e0c4;
     align-content: center;
-    padding: 0;
 }
 
 div#divObjetivo{
