@@ -216,7 +216,7 @@
   }
 
  
-  @media (max-width: 992px){
+  @media (min-width: 768px){
     div#divObjetivo{
         padding: 0;
         display: none;
