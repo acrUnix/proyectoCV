@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+
+
+   table.table.table-striped
+      thead.thead-dark
+        tr
+          th Nombre
+          th Edad
+          th Email
+
+        each user in users
+          tr
+            td= user.name
+            td= user.age
+            td= user.email

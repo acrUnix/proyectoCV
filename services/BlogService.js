@@ -1,16 +1,17 @@
-const BlogModel = require("../models/Blog");
+const BlogModel = require("../models/blog");
 const User = require("../models/users");
 
 
-exports.getAllBlogs = async () => {
-	return await BlogModel.find();
-};
-
 
 exports.getAllUsers = async () => {
-	return await User.find({});
+	return await User.find();
 };
 
+/*
+exports.getAllBlogs = async () => {
+	return await BlogModel.find({});
+};
+*/
 
 exports.createBlog = async (blog) => {
 	return await BlogModel.create(blog);

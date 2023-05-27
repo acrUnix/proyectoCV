@@ -1,46 +1,56 @@
 const blogService = require("../services/BlogService");
 const User = require("../models/users");
+const Blog = require("../models/blog");
+
 const async = require("async");
 
 const { body, validationResult } = require("express-validator");
 
 
 
-exports.getAllBlogs = async (req, res) => {
-	try{
-		const blogs = await blogService.getAllBlogs();
-		res.json({data: blogs, status: "success"});
-
-	}catch (err){
-	res.status(500).json({error: err.message});
-}
-};
-
 
 exports.getAllUsers = async (req, res) => {
 	try{
-		const blogs = await blogService.getAllUsers();
-		res.send({user: blogs, success: true});
+		const users = await blogService.getAllUsers();
+		res.render("users", {title: "Historias", users: users});
 
 	}catch (err){
 	res.status(500).json({error: err.message});
 }
 };
+
+
+exports.getAllBlogs = async (req, res, next) => {
+	try{
+
+		const allBlogs = await Blog.find();
+		res.render("blogs", {titulo: "Actualidad", blogs: allBlogs});
+		
+ 
+	}catch (err){
+	res.status(500).json({error: err.message});
+}
+};
+
 
 
 
 exports.createBlogs = async (req, res) => {
+
 	try{
-		const blog = await blogService.createBlog(req.body);
-		res.json({data: blog, status: "success"});
+
+		await blogService.createBlog(req.body);
 
 	}catch (err){
 	res.status(500).json({error: err.message});
+
 }
 };
 
 
+
 exports.getBlogById = async (req, res) => {
+
 	try{
 		const blog = await blogService.getBlogById(req.params.id);
 		res.json({data: blog, status: "success"});
@@ -71,7 +81,6 @@ exports.deleteBlog = async (req, res) => {
 	res.status(500).json({error: err.message});
 }
 };
-
 
 
 exports.createUsers = [

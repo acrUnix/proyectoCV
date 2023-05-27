@@ -1,21 +1,21 @@
 const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const pug = require('pug');
+const path = require('path');
+const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 const server = require('http').createServer(app);
 const io = require("socket.io")(server);
-
-
-const mongoose = require('mongoose');
 require('dotenv').config();
 const helmet = require('helmet');
 const blogRouter = require("./routes/BlogRoutes");
-var path = require('path');
-
-
-
+const blogInicio = require("./routes/BlogInicio");
 
 
 app.set('port', process.env.PORT || 3000);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
 app.use(helmet());
 
@@ -37,10 +37,12 @@ async function main() {
 app.use(express.json({extended: true}));
 app.use(express.urlencoded()); 
 app.use(bodyParser.json()); 
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use("/", blogInicio);
 app.use("/api/blogs", blogRouter);
 
 
+/**
 
 io.on('connection', function(socket) {
 
@@ -62,7 +64,7 @@ io.on('connection', function(socket) {
 
 });
 
-
+*/
 
 server.listen(app.get('port'), () => {
   console.log('Servidor corriendo en el puerto: ', app.get('port'));
