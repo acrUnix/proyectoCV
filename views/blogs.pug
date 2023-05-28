@@ -3,24 +3,21 @@ extends layout
 block content
   h1= titulo
 
-    div(class='container')
-      div(class='row')
-        div('col-sm-12')
-          div#mensajes
-            
-            each blog in blogs
-              p.text-success #{blog.title}
-              p.text-dark #{blog.body}
-            else
-              p No hay blogs para mostrar
+      div(class='container')
+        div(class='mensajes')
+          form(method='POST' action='/api/blogs/blog')
+            div.form-group
+              label(for='title') Titulo
+              input#title.form-control(type='text', placeholder='Titulo del blog' name='title' required='true')
+            div.form-group
+              label(for='body') Blog
+              textarea#body.form-control(type='textarea', placeholder='Escriba aqui su historia..' name='body' required='true')
+            button.btn.btn-primary(type='submit') Publicar
 
 
-  form(method='POST' action='/api/blogs/blog')
-    div.form-group
-      label(for='title') Titulo
-      input#title.form-control(type='text', placeholder='Titulo del blog' name='title' required='true')
-      hr
-    div.form-group
-      label(for='body') Blog
-      textarea#body.form-control(type='textarea', placeholder='Escriba aqui su historia..' name='body' required='true')
-    button.btn.btn-primary(type='submit') Publicar
+                    
+          each blog in blogs
+            p.text-success #{blog.title}
+            p.text-dark #{blog.body}
+          else
+            p No hay blogs para mostrar

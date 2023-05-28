@@ -9,11 +9,10 @@ const server = require('http').createServer(app);
 const io = require("socket.io")(server);
 require('dotenv').config();
 const helmet = require('helmet');
-const blogRouter = require("./routes/BlogRoutes");
-const blogInicio = require("./routes/BlogInicio");
+const blogRouter = require("./routes/BlogRoutes.js");
+const blogInicio = require("./routes/BlogInicio.js");
 
 
-app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
@@ -66,8 +65,8 @@ io.on('connection', function(socket) {
 
 */
 
-server.listen(app.get('port'), () => {
-  console.log('Servidor corriendo en el puerto: ', app.get('port'));
+server.listen(process.env.PORT, () => {
+  console.log('Servidor corriendo en el puerto: ', process.env.PORT);
 });
 
 

@@ -1,5 +1,5 @@
-const BlogModel = require("../models/blog");
-const User = require("../models/users");
+const BlogModel = require("../models/blog.js");
+const User = require("../models/users.js");
 
 
 
@@ -7,12 +7,12 @@ exports.getAllUsers = async () => {
 	return await User.find();
 };
 
-/*
+/**
 exports.getAllBlogs = async () => {
 	return await BlogModel.find({});
 };
-*/
 
+*/
 exports.createBlog = async (blog) => {
 	return await BlogModel.create(blog);
 };

@@ -1,6 +1,6 @@
-const blogService = require("../services/BlogService");
-const User = require("../models/users");
-const Blog = require("../models/blog");
+const blogService = require("../services/BlogService.js");
+const User = require("../models/users.js");
+const Blog = require("../models/blog.js");
 
 const async = require("async");
 
@@ -10,6 +10,7 @@ const { body, validationResult } = require("express-validator");
 
 
 exports.getAllUsers = async (req, res) => {
+
 	try{
 		const users = await blogService.getAllUsers();
 		res.render("users", {title: "Historias", users: users});
@@ -20,7 +21,7 @@ exports.getAllUsers = async (req, res) => {
 };
 
 
-exports.getAllBlogs = async (req, res, next) => {
+exports.getAllBlogs = async (req, res) => {
 	try{
 
 		const allBlogs = await Blog.find();
@@ -35,17 +36,40 @@ exports.getAllBlogs = async (req, res, next) => {
 
 
 
-exports.createBlogs = async (req, res) => {
+exports.createBlogs = [
+
+  body("title", "Por favor, ingrese la edad correctamente..")
+  .exists()
+  .trim()
+  .notEmpty()
+  .isLength({min:1})
+  .escape(),
+  body("body", "Por favor, ingrese un email correctamente..")
+  .exists()
+  .trim()
+  .notEmpty()
+  .isLength({min:1})
+  .escape(),
+
+  async (req, res) => {
+
+    let errors = validationResult(req); 
+        if(!errors.isEmpty()){
+        console.log(errors.array());
+        return res.json({ errors: errors.array(), message: "revise sus datos.."});
+    };
 
 	try{
 
 		await blogService.createBlog(req.body);
-
+    
 	}catch (err){
 	res.status(500).json({error: err.message});
 
 }
-};
+},
+
+];
 
 
 
