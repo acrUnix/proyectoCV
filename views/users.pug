@@ -8,11 +8,13 @@ block content
       thead.thead-dark
         tr
           th Nombre
-          th Edad
+          th Contraseña
           th Email
+          th Rol
 
         each user in users
           tr
-            td= user.name
-            td= user.age
-            td= user.email
+            td= user.username
+            td= user.password
+            td= user.mail
+            td= user.role

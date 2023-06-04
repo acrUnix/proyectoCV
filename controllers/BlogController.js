@@ -13,7 +13,7 @@ exports.getAllUsers = async (req, res) => {
 
 	try{
 		const users = await blogService.getAllUsers();
-		res.render("users", {title: "Historias", users: users});
+		res.status(200).render("users", {title: "Historias", users: users});
 
 	}catch (err){
 	res.status(500).json({error: err.message});
@@ -25,7 +25,7 @@ exports.getAllBlogs = async (req, res) => {
 	try{
 
 		const allBlogs = await Blog.find();
-		res.render("blogs", {titulo: "Actualidad", blogs: allBlogs});
+		res.status(200).render("blogs", {titulo: "Actualidad", blogs: allBlogs});
 		
  
 	}catch (err){

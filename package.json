@@ -4,7 +4,7 @@
 	"description": "chatonline",
 	"main": "index.js",
 	"scripts": {
-		"tsc": "tsc",
+		"start": "nodemon index.js",
 		"dev": "nodemon index.js"
 	},
 	"keywords": [

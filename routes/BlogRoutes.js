@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-
+const { registerPost, registerGet  } = require("../AuthUser/auth.js");
 const {
 	getAllBlogs,
 	getAllUsers,
@@ -9,14 +9,16 @@ const {
 	createUsers,
 	getBlogById,
 	updateBlog,
-	deleteBlog,
+	deleteBlog
 } = require("../controllers/BlogController.js");
+
 
 
 
 
 router.route("/").get(getAllUsers);
 router.route("/user").post(createUsers);
+router.route("/register").get(registerGet).post(registerPost);
 
 router.route("/blog").get(getAllBlogs).post(createBlogs);
 

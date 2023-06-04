@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  h1= title 
+    hr
+    div(class='container')
+      div(class='row')
+        div(class='col-6')
+          form(method='POST' action='')
+            div.form-group
+              label(for='username') Nombre de usuario
+              input#username.form-control(type='text', placeholder='Ingrese un nombre de usuario' name='username' required='true')
+            div.form-group
+              label(for='password') Contraseña
+              textarea#password.form-control(type='text', placeholder='Ingrese una contraseña' name='password' required='true')
+            div.form-group
+              label(for='mail') Mail
+              input#mail.form-control(type='text', placeholder='Ingrese su correo electronico' name='mail' required='true')
+            div.form-group
+              label(for='role') Admin o Usuario?
+              textarea#role.form-control(type='text', placeholder='Ingrese su rol' name='role' required='true')
+
+            button.btn.btn-primary(type='submit') Publicar
+
+        div(class='col-6')
+          div(class=mensajes)
+                each val in users
+                  p #{val.username} - #{val.password} - #{val.mail} - #{val.role}
+                else
+                  p no hay datos
